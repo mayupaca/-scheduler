@@ -107,17 +107,16 @@ export default function Appointment(props) {
       )}
       {mode === ERROR_SAVE && (
         <Error
-          message="We are experiencing some issues. The appointment can not be proceeded."
+          message="Error! This appointment can not be proceeded."
           onClose={() => back()}
         />
       )}
       {mode === ERROR_DELETE && (
         <Error
-          message="We are experiencing some issues. The appointment can not be deleted."
+          message="Error! This appointment can not be deleted."
           onClose={() => back()}
         />
       )}
-
     </article>
   );
 }

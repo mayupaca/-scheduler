@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function useApplicationData() {
-
   const [state, setState] = useState( {
     day:"Monday",
     days:[],
@@ -41,7 +40,6 @@ export default function useApplicationData() {
     const updatedDay = {...day, spots };
     const updatedDays = state.days.map(d => d.name === state.day ? updatedDay : d);
      
-    
     return updatedDays;
   };
   
