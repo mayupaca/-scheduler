@@ -8,10 +8,9 @@ export default function Form (props) {
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
   const [error, setError] = useState('');
 
-  const reset = (val) => {
+  const reset = () => {
     setStudent('');
     setInterviewer(null);
-    val = "";
   };
 
   const cancel = () => {
@@ -23,9 +22,9 @@ export default function Form (props) {
     if (student === '') {
       setError('Student name cannot be blank');
       return;
-    } else if (interviewer === null) {
-      setError('Select an interviewer');
-      return;
+    // } else if (interviewer === null) {
+    //   setError('Select an interviewer');
+    //   return;
     }
 
     setError('');
@@ -38,12 +37,12 @@ export default function Form (props) {
         <form autoComplete="off" onSubmit={e => e.preventDefault()} >
           <input
             className='appointment__create-input text--semi-bold'
-            data-testid="student-name-input"
             value={student}
             onChange={(event) => setStudent(event.target.value)}
             name='name'
             type='text'
             placeholder='Enter Student Name'
+            data-testid="student-name-input"
           />
           <section className="appointment__validation">{error}</section>
         </form>
