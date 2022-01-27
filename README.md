@@ -12,7 +12,15 @@ Users can also edit or cancel existing interviews.
 - Jest
 - Storybook
 - Webpack Development Server
-  
+
+### Scheduler Top Page
+![scheduler_top_image](https://github.com/mayupaca/scheduler/blob/master/docs/Schedule_top.png?raw=true)
+### Delete Appointment
+![scheduler_top_image](https://github.com/mayupaca/scheduler/blob/master/docs/deleting_appointment.png?raw=true)
+### Create New Appointment
+![scheduler_top_image](https://github.com/mayupaca/scheduler/blob/master/docs/making_new_appointment.png?raw=true)
+### Saving
+![scheduler_top_image](https://github.com/mayupaca/scheduler/blob/master/docs/saving.png?raw=true)
 
 
 ## Setup
